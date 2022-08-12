@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav nav">
+                
+
+                <div class="nav__burger">
+                    
+                </div>
+                <ul class="nav__list list">
+                    <li class="list__item list__menu">
+                        <a href="index.html" class="list__link link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="list__item list__menu">
+                        <a href="" class="list__link link">
+                            Фото и Видео
+                        </a>
+                    </li>
+
+
+                    <li class=" logo">
+                        
+                        <a href="index.html">
+                            <picture class="list__logo ">
+                                <source srcset="img/logotype-desktop.svg.png" media="(min-width: 1199px)" class="logo__img-descktop" width="187" >
+                                <source srcset="img/logotype-tablet.svg.png" media="(min-width: 650px)" class="logo__img-descktop" width="108" >
+
+                                <img src="img/logotyle-mobile.svg.png" class="logo__img-mobail" width="108">
+                            </picture>
+                        </a>
+                
+                    </li>
+
+
+                    <li class="list__item list__menu">
+                        <a href="" class="list__link link">
+                            Форма Отзыва
+                        </a>
+                    </li>
+                    <li class="list__item list__menu">
+                        <a href="" class="list__link link">
+                            HTML Academy
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </nav>
+
+
+            <div class=" header__intro intro">
+            
+                <div class="intro__wrapper">
+                        <div class="intro__content">
+                            <div class="intro__img">
+                                <h1 class="h1">Парк-Отель Седона</h1>
+                                <img src="img/SEDONA.png" alt="Седона">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="forms section ">
+           <div class="container ">
+                <div class="about">
+                    <h2 class="about__title title  about__title-inner">
+                        Оставьте свой отзвы
+                    </h2>
+                    
+                    <p class="about__text text about__text-inner">
+                        Помогите нашим отелям стать лучше!
+                        оставьте отзыв о них, а также о посещенных
+                        вами достопримечательностях
+                    </p>
+                </div>
+           
+                <form action="" class="form">
+
+                    <div class="form__opinion form__contain">
+                        <h2 class="about__title title  about__title-inner">
+                            Ваше общее впечатление:
+                        </h2>
+
+                        <div class="form__wrapper">
+                            <label class="form__label form__label-radio">
+                                <input type="radio" class="form__radio visually-hidden"checked name="1">
+                                <span class="form__fake"></span>
+                                <span class="apostrofe">Скорее положительное</span>
+                            </label>
+
+                            <label class="form__label form__label-radio">
+                                <input type="radio" class="form__radio visually-hidden" name="1">
+                                <span class="form__fake"></span>
+                                <span class="apostrofe">Скорее отрицательное</span>
+                            </label>
+
+                            <label class="form__label form__label-radio">
+                                <input type="radio" class="form__radio visually-hidden" name="1" >
+                                <span class="form__fake"></span>
+                                <span class="apostrofe">Затрудняюсь ответить</span>
+                            </label>
+                       </div>
+                    </div>
+
+                    <div class="form__names form__top form__contain">
+                        <h2 class="about__title title  about__title-inner">
+                            Представьтесь:
+                        </h2>
+
+                       <div class="form__wrapper">
+                            <label class="form__label">
+                                <span class="apostrofe">Имя*</span>
+                                <input type="text" class="form__name form__first-name form__input input form__required" placeholder="Петр" required>
+                            </label>
+
+                            <label class="form__label">
+                                <span class="apostrofe">Фамилия*</span>
+                                <input type="text" class="form__name form__last-name form__input input form__required" placeholder="Иванов" required>
+                            </label>
+
+                            <label class="form__label">
+                                <span class="apostrofe">Отчество</span>
+                                <input type="text" class="form__name form__input input" placeholder="Александорович">
+                            </label>
+                       </div>
+
+                    </div>
+
+                    <div class="form__contacts form__contain">
+                            <h2 class="about__title title  about__title-inner">
+                                Контактная информация
+                            </h2>
+    
+                           <div class="form__wrapper">
+                                <label class="form__label ">
+                                    <span class="apostrofe">Контакный телефон:*</span>
+                                    <div class="form__input-wrapper phone">
+                                        <input type="tel" class="form__phone form__input input form__required " placeholder="Введите телефон" maxlength="11" required>
+                                    </div>
+                                </label>
+    
+                                <label class="form__label">
+                                    <span class="apostrofe">Электронная почта:*</span>
+
+                                    <div class="form__input-wrapper mail">
+                                        <input type="email" class="form__mail form__input input form__required" placeholder="Введите e-mail" required>
+                                    </div>
+                                </label>
+                           </div>
+                    </div>
+
+                    
+
+                    <div class="form__visited form__contain">
+                        <h2 class="about__title title  about__title-inner">
+                            Ваше общее впечатление:
+                        </h2>
+
+                        <div class="form__wrapper">
+                            <label class="form__label form__label-checkbox">
+                                <input type="checkbox" class="form__checkbox visually-hidden"checked>
+                                <span class="form__fake form__fake--checkbox"></span>
+                                <span class="apostrofe">Мост Дьявола</span>
+                            </label>
+
+                            <label class="form__label form__label-radio">
+                                <input type="checkbox" class="form__checkbox visually-hidden" checked>
+                                <span class="form__fake form__fake--checkbox"></span>
+                                <span class="apostrofe">Гора-Колокол</span>
+                            </label>
+
+                            <label class="form__label form__label-radio">
+                                <input type="checkbox" class="form__checkbox visually-hidden"checked >
+                                <span class="form__fake form__fake--checkbox"></span>
+                                <span class="apostrofe">Слайд-парк</span>
+                            </label>
+
+                            <label class="form__label form__label-radio">
+                                <input type="checkbox" class="form__checkbox visually-hidden" name="1">
+                                <span class="form__fake form__fake--checkbox"></span>
+                                <span class="apostrofe">Красные скалы</span>
+                            </label>
+                       </div>
+
+                       <div class="modal-form modal-form__incorrect ">
+                            <div class="modal-form__body">
+                                <div class="modal-form__content">
+                                    <h2 class="title modal__title">
+                                        Что-то не так
+                                    </h2>
+
+                                    <p class="text modal__text">
+                                        ЧТО-ТО ПОШЛО НЕ ТАК! 
+                                        Проверьте поля, выделенные красным, 
+                                        скорее вы всего забыли их заполнить
+                                    </p>
+
+                                    <button  class="button modal__button">
+                                        Oк
+                                    </button>
+                                </div>
+                            </div>
+                       </div>
+
+                    </div>
+
+                    <div class="form__area form__contain ">
+                        <h2 class="about__title title  about__title-inner">
+                            Опишите свои эмоции
+                        </h2>
+
+                        <div class="modal-form modal-form__incorrect ">
+                            <div class="modal-form__body">
+                                <div class="modal-form__content">
+                                    <h2 class="title modal__title">
+                                        Ваш отзыв отправлен
+                                    </h2>
+
+                                    <p class="text modal__text">
+                                        ЧТО-ТО ПОШЛО НЕ ТАК! 
+                                        Проверьте поля, выделенные красным, 
+                                        скорее вы всего забыли их заполнить
+                                    </p>
+
+                                    <button  class="button modal__button">
+                                        Закрыть окно
+                                    </button>
+                                </div>
+                            </div>
+                       </div>
+
+                        <label class="form__label form__label-radio">
+                            <textarea class="form__textarea" placeholder="Опишите подробно все свои восторги "></textarea>
+                        </label>
+                    </div>
+
+                    <div class="form__button-contain ">
+                        <button type="submit" class="button form__button">
+                            ОТПРАВИТЬ ОТЗЫВ
+                        </button>
+
+                        <span class="apostrofe">
+                            *: поле обязательно для заполнения
+                        </span>
+                    </div>
+
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer section">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__hesh footer__flex">
+                    <a href="" class="footer__link">
+                        #VisitSedona
+                    </a>
+                </div>
+
+                <div class="footer__media footer__flex">
+                   <div class="footer__logo">
+                        <a href="">
+                            <svg class="footer__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
+                            <g id="W6EeEF_1_">
+                                <g>
+                                    <path fill="#fff" d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
+                                        c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024
+                                        c-0.231,6.75-3.175,11.217-10.077,11.082c-0.522,0,0.075,0-0.446,0c-0.41,0-4.164-0.46-4.898-1.887
+                                        c2.271,0.196,3.893-0.422,4.693-1.177c-0.96-0.3-2.679-0.477-2.979-2.95C2.064,9.09,2.279,9.212,2.905,9.103
+                                        C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952
+                                        c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.183,0.793,10.95,0.144z"/>
+                                </g>
+                            </g>
+                        </svg>
+                        </a>
+                   </div>  
+                    
+                    <div class="footer__logo">   
+                        <a href="">
+                        <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+                            <path fill="#FFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+                        </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer__logo">   
+                       <a href="">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
+                            <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
+                            M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
+                        </svg>
+                       </a>
+                    </div>
+                </div>
+
+                <div class="footer__academy footer__flex">
+                    <p class="text footer__text">
+                        Разработанно
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+        
+  
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
