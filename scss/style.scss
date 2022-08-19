@@ -22,7 +22,8 @@
     //COLORS
     .container{
         max-width: 100%;
-        margin: 0 auto;        
+        margin: 0 auto;   
+    
     }
 
     @mixin border {
@@ -145,6 +146,7 @@
         color: #333;
 
     }
+
       
       
 
@@ -679,7 +681,7 @@
    }
 
    .footer{
-    padding: 0 20px;
+    padding: 0 20px 20px ;
     .footer__content{
         display: flex;
         justify-content: space-between;
@@ -1235,6 +1237,11 @@
     }
 }
 
+.modal__form-active{
+    display: block;
+
+}
+
 .modal-form__content{
   max-width: 400px;
   padding: 20px 0;
@@ -1247,9 +1254,7 @@
     width: 70%;
 }
 
-.form__incorrect{
-    box-shadow: 0 0 0 2px red;
-}
+
 
 .form__names{
     order: 1;
@@ -1275,6 +1280,14 @@
 .form__button-contain{
     order: 6;
 
+}
+
+.form__incorrect{
+    box-shadow: 0 0 0 2px red;
+}
+
+.form__correct{
+    box-shadow: 0 0 0 2px green;
 }
 
 
@@ -1484,7 +1497,7 @@
  
   }
 
-
+  
 
 }
 
@@ -1495,6 +1508,232 @@
 //FORM PAGE
 
 
+//PHOTO PAGE
+.photo{
+   .photo__wrapper{
+    max-width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 30px;
+
+
+
+    }
+
+    .photo__img-contain{
+        padding-top: 25px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top: 0;
+            border-top: 1px solid #e5e5e5;
+
+        }
+
+      
+
+    }
+
+    .photo__img-contain+.photo__img-contain{
+        margin-top: 30px;
+
+    }
+
+    .phot__img-item{
+        width: 100%;
+    }
+
+    .photo__autor{
+        margin-top: 25px;
+    }
+
+    .photo__text{
+        padding: 20px 0;
+    }
+
+    .photo__like{
+        position: relative;
+        padding-left: 30px;
+
+        &::before{
+            content: "";
+            width: 23px;
+            height: 21px;
+            position: absolute;
+            top: -4px;
+            left: 0;
+            z-index: 5;
+            background-image: url("../img/like-icon.svg.png");
+
+        }
+    }
+
+    .video{
+        margin-top: 50px;
+
+        .link{
+            color: #333;
+            font-size: 14px;
+            transition: 0.5s;
+
+
+            &:hover{
+                color: $colorActive;
+                transition: 0.5s;
+            }
+        }
+    }
+    .video__contain{
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 50px;
+        
+        
+      }
+
+    .video__mp-4{
+        display: block;
+        width: 100%;
+    }
+}
+
+//TABLET
+@media (min-width:$scren-sm){
+    .photo{
+       
+        padding: 0 30px;
+        .photo__wrapper{
+         max-width: 100%;
+         margin: 0 auto;
+         display: flex;
+         flex-direction: row;
+         flex-wrap:wrap;
+         justify-content: space-between;
+         align-items: center;
+         border: none;
+
+            
+     
+        }
+
+
+        .photo__img-contain{
+            width: 50%;
+            margin-top: 30px;
+            padding-top: 25px;
+            position: static;
+            background-color: #f2f2f2;
+            padding: 0;
+            &:nth-child(2n-5){
+                background-color: #eaeaea;
+            }
+
+            &:first-child{
+                background-color: #f2f2f2;
+
+            }
+
+
+            img{
+                width: 100%;
+
+            }
+    
+            &::after{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: 0;
+                border-top: 0;
+    
+            }
+            
+        }
+
+        .photo__main{
+            width: 100%;
+           
+        }
+
+
+        .photo__autor{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin: 0;
+
+           
+        }
+    
+       .photo__text{
+        padding: 10px 0 0 0;
+    
+       }
+        
+    }
+
+  
+
+}
+//TABLET
+//DESKTOP
+@media (min-width:$scren-xl){
+    .photo{
+        max-width: 100%;
+
+        .photo__wrapper{
+            margin-top: 30px;
+        }
+        .photo__img-contain{
+            width: 33.3%;
+            margin-top: 30px;
+            padding-top: 25px;
+            margin: 0;
+            position: static;
+            background:none;
+            padding: 0;
+            position: relative;
+            &:nth-child(2n-5){
+                background:none;
+            }
+
+            &:first-child{
+                background:none;
+
+            }
+        }
+
+        .photo__main{
+            width: 100%;
+           
+        }
+
+        .photo__autor{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: $colorWhite;
+            background-color: rgb(20%, 20%, 20%, 0.5);
+            
+            P{
+                color: $colorWhite;
+            }
+        }
+    }
+}
+//DESKTOP
+//PHOTO PAGE
 
 
    
